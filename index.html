@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VishnyxLabs | AI, SaaS & Intelligent Automation</title>
+    <meta name="description"
+        content="VishnyxLabs builds intelligent SaaS, automation systems, and enterprise-grade software for forward-looking businesses.">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="noise-overlay"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <div class="logo-badge">
+                <img src="logo.png" alt="VishnyxLabs logo">
+            </div>
+            <span class="logo-text">Vishnyx<span class="highlight">Labs</span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="cta-button small">Get Started</a>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Scale Faster with <br><span class="gradient-text">Intelligent Software</span></h1>
+                <p>Stop guessing. Start growing. We build high-performance AI software that cuts costs and automates
+                    your business.</p>
+                <div class="hero-buttons">
+                    <button onclick="openModal()" class="cta-button">Get Your Free Audit</button>
+                    <a href="#services" class="secondary-button">View Solutions</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <canvas id="hero-canvas"></canvas>
+            </div>
+        </section>
+
+        <section class="trust-bar">
+            <p>Powering next-gen solutions with</p>
+            <div class="logos-slide">
+                <span>Java</span>
+                <span>React</span>
+                <span>Node.js</span>
+                <span>STT</span>
+                <span>RAG</span>
+                <span>MCP</span>
+                <span>LangChain</span>
+                <span>Google Cloud</span>
+                <span>AWS</span>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="section-header">
+                <h2>Our Expertise</h2>
+                <p>Redefining possibilities with code and intelligence.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon-box">🚀</div>
+                    <h3>SaaS Development</h3>
+                    <p>Scalable, secure, and high-performance cloud applications tailored to your business needs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box">🧠</div>
+                    <h3>AI Solutions</h3>
+                    <p>Custom machine learning models, NLP, and automation to drive intelligent decision making.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box">💼</div>
+                    <h3>Consulting</h3>
+                    <p>Strategic software architecture and digital transformation advice from industry veterans.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box">🎓</div>
+                    <h3>Training</h3>
+                    <p>Upskill your workforce with hands-on workshops in AI, modern web dev, and cloud tech.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <h2>Why VishnyxLabs?</h2>
+                <h3 class="mini-heading">Engineering Beyond Code</h3>
+                <p class="sub-text">
+                    Guided by a software architect with nearly 20 years of end-to-end product
+                    experience, our elite engineering team builds systems that push the boundaries
+                    of what technology can achieve.
+                </p>
+            </div>
+        </section>
+
+        <section id="faq" class="faq-section">
+            <div class="section-header">
+                <h2>Common Questions</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How fast can you launch an MVP?</h3>
+                    <p>Typically 4-8 weeks for a fully functional SaaS MVP, depending on complexity.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you own the IP?</h3>
+                    <p>No. You own 100% of the code and intellectual property upon delivery.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What is your tech stack?</h3>
+                    <p>We specialize in Java, Node.js, React, AI, STT, NLP and major cloud providers (GCP/AWS).</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <h2>Ready to Evolve?</h2>
+                <p>Let's discuss your next breakthrough.</p>
+                <form class="contact-form" onsubmit="event.preventDefault();">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" required placeholder=" "></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="cta-button full-width">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 VishnyxLabs. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="#hero">Back to top</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lead Capture Modal -->
+    <div id="lead-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal()">&times;</button>
+            <h2>Unlock Your Growth</h2>
+            <p>Get a free 30-minute technical audit of your current stack.</p>
+            <form class="modal-form"
+                onsubmit="event.preventDefault(); closeModal(); alert('Thanks! We will be in touch.');">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Work Email" required>
+                <button type="submit" class="cta-button full-width">Claim Free Audit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="particles.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
