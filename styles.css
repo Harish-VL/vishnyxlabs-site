@@ -753,3 +753,20 @@ footer {
     max-width: 8000px;
     line-height: 1.55;
 }
+
+/* Hide particle animation on mobile */
+@media (max-width: 768px) {
+    #hero-canvas {
+        display: none !important;
+    }
+
+    .hero-visual {
+        display: none !important;
+    }
+
+    .hero-section {
+        min-height: auto !important;
+        padding-top: 4rem !important;
+        padding-bottom: 3rem !important;
+    }
+}
