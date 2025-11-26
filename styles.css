@@ -74,7 +74,7 @@ h3 {
     backdrop-filter: blur(10px);
     z-index: 100;
     border-bottom: var(--glass-border);
-    height: 64px;
+    height: 68px;
 }
 
 .logo {
