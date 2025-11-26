@@ -679,7 +679,7 @@ footer {
 
 /* Logo image */
 .logo-badge img {
-    height: 73px;
+    height: 65px;
     /* <-- increase this to make logo bigger */
     width: auto;
     display: block;
