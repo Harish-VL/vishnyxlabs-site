@@ -190,7 +190,7 @@
             <button class="close-modal" onclick="closeModal()">&times;</button>
             <h2>Unlock Your Growth</h2>
             <p>Get a free 30-minute technical audit of your current stack.</p>
-            <form class="modal-form"
+            <form id="audit-form" class="modal-form"
                 onsubmit="event.preventDefault(); closeModal(); alert('Thanks! We will be in touch.');">
                 <input type="text" name="company" style="display:none">
                 <input type="text" id="audit-name" placeholder="Your Name" required>
