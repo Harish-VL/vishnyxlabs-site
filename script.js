@@ -116,3 +116,52 @@ document.querySelector('.logo').addEventListener('click', e => {
     window.location.href = 'index.html';
   }
 });
+
+const contactForm = document.getElementById('contact-form');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const payload = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      message: document.getElementById('message').value,
+      type: 'contact'
+    };
+
+    await fetch('/.netlify/functions/send-email', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+
+    alert('Message sent successfully');
+    contactForm.reset();
+  });
+}
+
+const auditForm = document.getElementById('modal-form');
+
+if (auditForm) {
+  auditForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const payload = {
+      name: document.getElementById('audit-name').value,
+      email: document.getElementById('audit-email').value,
+      message: document.getElementById('audit-notes').value,
+      type: 'audit'
+    };
+
+    await fetch('/.netlify/functions/send-email', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+
+    alert('Audit request sent');
+    auditForm.reset();
+    closeModal();
+  });
+}
