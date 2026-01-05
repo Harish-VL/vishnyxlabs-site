@@ -154,6 +154,7 @@
                 <h2>Ready to Evolve?</h2>
                 <p>Let's discuss your next breakthrough.</p>
                 <form class="contact-form" onsubmit="event.preventDefault();">
+                    <input type="text" name="company" style="display:none">
                     <div class="form-group">
                         <input type="text" id="name" required placeholder=" ">
                         <label for="name">Name</label>
@@ -191,6 +192,7 @@
             <p>Get a free 30-minute technical audit of your current stack.</p>
             <form class="modal-form"
                 onsubmit="event.preventDefault(); closeModal(); alert('Thanks! We will be in touch.');">
+                <input type="text" name="company" style="display:none">
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Work Email" required>
                 <button type="submit" class="cta-button full-width">Claim Free Audit</button>
