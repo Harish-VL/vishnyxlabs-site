@@ -780,3 +780,9 @@ footer {
         padding-bottom: 3rem !important;
     }
 }
+
+@media (max-width: 768px) {
+  .logo-text {
+    transition: opacity 0.25s ease;
+  }
+}
