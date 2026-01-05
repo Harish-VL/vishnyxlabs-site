@@ -181,6 +181,7 @@ h3 {
 .hero-buttons {
     display: flex;
     gap: 1.5rem;
+    margin-top: 2rem;
 }
 
 .hero-visual {
@@ -774,11 +775,14 @@ footer {
     .hero-visual {
         display: none !important;
         min-height: 420px;
+        padding-bottom: 40px;
     }
 
     .hero-section {
+        min-height: 100vh;
         align-items: center;
-        padding-top: 100px; 
+        padding-top: 100px;
+        padding-bottom: 60px;
     }
 }
 
