@@ -154,7 +154,7 @@ h3 {
     min-height: auto;
     display: flex;
     align-items: flex-start;
-    padding: 80px 5% 80px;
+    padding: 72px 5% 48px;
     position: relative;
     overflow: hidden;
 }
@@ -191,8 +191,14 @@ h3 {
     align-items: center;
     position: relative;
     height: 100%;
-    min-height: 500px;
+    min-height: 360px;
     /* Ensure space for canvas */
+}
+
+.hero-section::after {
+    content: "";
+    display: block;
+    height: 60px;
 }
 
 #hero-canvas {
@@ -804,4 +810,10 @@ footer {
   .navbar.hidden {
     transform: translateY(-100%);
   }
+}
+
+@media (min-width: 1024px) {
+    .trust-bar {
+        margin-top: 40px;
+    }
 }
