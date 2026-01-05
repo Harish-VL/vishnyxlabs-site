@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://vishnyxlabs.com/sitemap.xml
