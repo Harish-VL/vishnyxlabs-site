@@ -141,7 +141,7 @@ if (contactForm) {
   });
 }
 
-const auditForm = document.getElementById('modal-form');
+const auditForm = document.getElementById('audit-form');
 
 if (auditForm) {
   auditForm.addEventListener('submit', async (e) => {
