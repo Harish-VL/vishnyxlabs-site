@@ -178,3 +178,24 @@ document.querySelector('.logo').addEventListener('click', (e) => {
         window.location.href = 'index.html';
     }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const logo = document.querySelector(".logo");
+
+  // Initial intro animation
+  logo.classList.add("intro");
+
+  // Remove text after intro (once)
+  setTimeout(() => {
+    logo.classList.remove("intro");
+  }, 1500);
+
+  // Scroll-based behavior
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 40) {
+      logo.classList.add("show-text");
+    } else {
+      logo.classList.remove("show-text");
+    }
+  });
+});
