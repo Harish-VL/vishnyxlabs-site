@@ -83,18 +83,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* -----------------------------
-     EmailJS init
-  ----------------------------- */
-  const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';
-  const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';
-  const EMAILJS_CONTACT_TPL = 'YOUR_CONTACT_TEMPLATE_ID';
-  const EMAILJS_AUDIT_TPL   = 'YOUR_AUDIT_TEMPLATE_ID';
-
-  if (window.emailjs) {
-    emailjs.init(EMAILJS_PUBLIC_KEY);
-  }
-
-  /* -----------------------------
      Forms (unchanged logic)
   ----------------------------- */
   // Keep your existing form handlers here as-is
