@@ -150,7 +150,6 @@ if (auditForm) {
     const payload = {
       name: document.getElementById('audit-name').value,
       email: document.getElementById('audit-email').value,
-      message: document.getElementById('audit-notes').value,
       type: 'audit'
     };
 
