@@ -151,10 +151,10 @@ h3 {
 
 /* Hero Section */
 .hero-section {
-    min-height: 100vh;
+    min-height: auto;
     display: flex;
     align-items: flex-start;
-    padding: 80px 5% 0;
+    padding: 80px 5% 80px;
     position: relative;
     overflow: hidden;
 }
