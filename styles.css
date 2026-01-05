@@ -153,8 +153,8 @@ h3 {
 .hero-section {
     min-height: 100vh;
     display: flex;
-    align-items: center;
-    padding: 0 5%;
+    align-items: flex-start;
+    padding: 80px 5% 0;
     position: relative;
     overflow: hidden;
 }
@@ -167,7 +167,8 @@ h3 {
 .hero-content h1 {
     font-size: 4.5rem;
     line-height: 1.1;
-    margin-bottom: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 .hero-content p {
@@ -772,12 +773,12 @@ footer {
 
     .hero-visual {
         display: none !important;
+        min-height: 420px;
     }
 
     .hero-section {
-        min-height: auto !important;
-        padding-top: 4rem !important;
-        padding-bottom: 3rem !important;
+        align-items: center;
+        padding-top: 100px; 
     }
 }
 
